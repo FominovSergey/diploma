@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__nav__item">
+        <img src="img/logo.svg" alt="logo" />
+        <div class="social_network">
+          <img src="img/vk.svg" alt="vk" />
+          <img src="img/instagram.svg" alt="instagram" />
+          <img src="img/whatsapp.svg" alt="whatsapp" />
+        </div>
+        <button class="header_button">Подать документы</button>
+      </div>
+      <ul class="header__nav__list">
+        <li><a class="header__nav__link" href="">Направления</a></li>
+        <li><a class="header__nav__link" href="higher_directions.html">Вузы</a></li>
+        <li><a class="header__nav__link" href="">Колледжи</a></li>
+        <li><a class="header__nav__link" href="">Профессии</a></li>
+        <li><a class="header__nav__link" href="">Отзывы</a></li>
+        <li><a class="header__nav__link" href="#question-answer">Вопроc-ответ</a></li>
+        <li><a class="header__nav__link" href="">Как поступить</a></li>
+        <li><a class="header__nav__link" href="">Учебным заведениям</a></li>
+        <li><a class="header__nav__link" href="contacts.html">Контакты</a></li>
+        <li><a class="header__nav__link" href="helpful_information.html">Ещё</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Контакты</h2>
+    <div class="contact_educational_level">
+      <p class="educational_level activ">Абитуриентам</p>
+      <p class="educational_level">Действующим студентам</p>
+      <p class="educational_level">Учебным заведениям</p>
+    </div>
+    <p class="contact_subtitle">Единая приёмная комиссия дистанционных вузов и колледжей России</p>
+    <p class="contact_phone">+7 (902) 311 36 64</p>
+    <p class="contact_schedule">пн — пт с 9.00 до 19.00</p>
+    <div class="contact_social_network">
+      <img src="img/telegram.png" alt="telegram">
+      <img src="img/viber.png" alt="viber">
+      <img src="img/vk.svg" alt="vk">
+      <img src="img/contact.png" alt="contact">
+      <div class="contact_social_network_text">
+        <p class="review_name">Антон Пабаловец</p>
+        <p class="review_university">Менеджер по работе с абитуриентами</p>
+      </div>
+    </div>
+    <div class="map_container">
+      <img class="map" src="img/map.png" alt="map">
+      <div class="location">
+        <img src="img/location.svg" alt="location">
+        <p>Москва, Смоленская площадь 13/21, офис 12</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="feedback_show">
+        <div class="feedback_text">
+            <h3>Ещё вопросы?</h3>
+            <p>Задайте их и наш менеджер свяжется с Вами в течение 15 минут</p>
+            <div class="feedback_text_manager">
+                <img src="img/avatar_small.png" alt="avatar_small" />
+                <p>Вам ответит Анастасия — Ваш персональный менеджер</p>
+            </div>
+        </div>
+        <div class="feedback_data">
+            <p>Как Вас зовут?</p>
+            <input type="text" placeholder="Иванов Иван" />
+            <p>Ваш телефон</p>
+            <input type="text" placeholder="+7 (000) 000 00 00" />
+            <p class="feedback_data_agreement">
+                Нажимая кнопку “Задать вопрос”, Вы соглашаетесь с <ins>условиями обработки персональных данных</ins>
+            </p>
+        </div>
+        <div class="feedback_message">
+            <p>Напишите свои вопросы:</p>
+            <input type="text" placeholder="Вы можете задать несколько вопросов" />
+            <button class="feedback_message_button">Задать вопрос</button>
+            <button class="button-close" type="button">
+                <img src="img/close-button.svg" alt="Закрыть">
+            </button>
+        </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div>
+      <img src="img/logo2.svg" alt="logo" />
+      <p>Политика конфиденциальности</p>
+    </div>
+    <div class="footer_social_network">
+      <img src="img/vk.svg" alt="vk" />
+      <img src="img/instagram.svg" alt="instagram" />
+      <img src="img/whatsapp.svg" alt="whatsapp" />
+    </div>
+    <div class="footer_info">
+      <p class="footer_number">+7 (902) 311 36 64</p>
+      <p>Рабочее время: <br> Пн — Пт с 9.00 до 19.00</p>
+    </div>
+  </footer>
+  <script src="js/modal_window.js"></script>
+</body>
+
+</html>

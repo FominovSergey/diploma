@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav__item">
+                <img src="img/logo.svg" alt="logo" />
+                <div class="social_network">
+                    <img src="img/vk.svg" alt="vk" />
+                    <img src="img/instagram.svg" alt="instagram" />
+                    <img src="img/whatsapp.svg" alt="whatsapp" />
+                </div>
+                <button class="header_button">Подать документы</button>
+            </div>
+            <ul class="header__nav__list">
+                <li><a class="header__nav__link" href="" target=".directions">Направления</a></li>
+                <li><a class="header__nav__link" href="higher_directions.html">Вузы</a></li>
+                <li><a class="header__nav__link" href="">Колледжи</a></li>
+                <li><a class="header__nav__link" href="">Профессии</a></li>
+                <li><a class="header__nav__link" href="">Отзывы</a></li>
+                <li><a class="header__nav__link" href="#question-answer">Вопроc-ответ</a></li>
+                <li><a class="header__nav__link" href="">Как поступить</a></li>
+                <li><a class="header__nav__link" href="">Учебным заведениям</a></li>
+                <li><a class="header__nav__link" href="contacts.html">Контакты</a></li>
+                <li><a class="header__nav__link" href="helpful_information.html">Ещё</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="higher_directions">
+        <h2>Направления онлайн образования <br> в Санкт-Петербурге</h2>
+        <p class="higher_directions_title">Мы сотрудничаем с 10 престижными колледжами по программам дистанционного онлайн-обучения.</p>
+        <div class="directions_degrees">
+            <div class="directions_degree activ">
+                <p>Высшее</p>
+                <sup>14</sup>
+            </div>
+            <div class="directions_degree">
+                <p>Среднее</p>
+                <sup>9</sup>
+            </div>
+            <div class="directions_degree">
+                <p>ДПО</p>
+                <sup>36</sup>
+            </div>
+        </div>
+        <div class="higher_directions_content">
+            <div class="filter">
+                <div class="search">
+                    <img src="img/search.svg" alt="search">
+                    <input type="text" placeholder="Поиск по направлениям">
+                </div>
+                <div class="switch_filter">
+                    <p>Онлайн-защита</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch_filter">
+                    <p>Рассрочка</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch_filter last">
+                    <p>Можно перевестись</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="checkboxes">
+                    <p>Уровень образования</p>
+                    <input type="checkbox" id="custom-checkbox1" class="custom-checkbox level_educstion" checked>
+                    <label for="custom-checkbox1">Магистратура</label>
+                    <input type="checkbox" id="custom-checkbox2" class="custom-checkbox level_educstion">
+                    <label for="custom-checkbox2">Бакалавриат</label>
+                    <input type="checkbox" id="custom-checkbox3" class="custom-checkbox level_educstion">
+                    <label for="custom-checkbox3">Специалитет</label>
+                </div>
+                <div class="checkboxes">
+                    <p>Тематика направления</p>
+                    <input type="checkbox" id="custom-checkbox4" class="custom-checkbox">
+                    <label for="custom-checkbox4">Гуманитарные</label>
+                    <input type="checkbox" id="custom-checkbox5" class="custom-checkbox">
+                    <label for="custom-checkbox5">Технические</label>
+                    <input type="checkbox" id="custom-checkbox6" class="custom-checkbox">
+                    <label for="custom-checkbox6">Педагогические</label>
+                </div>
+                <div class="range">
+                    <p>Длительность обучения</p>
+                    <span>1 год — 5 лет</span>
+                    <div class="range-input">
+                        <input type="range">
+                        <input type="range">
+                    </div>
+                </div>
+                <div class="range">
+                    <p>Стоимость семестра</p>
+                    <span>0 ₽ — 200 000 ₽</span>
+                    <div class="range-input">
+                        <input type="range">
+                        <input type="range">
+                    </div>
+                    <span class="range_signature">* Семестр — это 6 месяцев, полугодие</span>
+                </div>
+            </div>
+            <div>
+                <div class="selected_filter_content">
+                    <div class="selected_filter directions_card_magistracy">
+                        <p>Магистратура</p>
+                        <p>✕</p>
+                    </div>
+                    <div class="selected_filter directions_card_bachelor">
+                        <p>Баковлариат</p>
+                        <p>✕</p>
+                    </div>
+                    <div class="selected_filter directions_card_specialty">
+                        <p>Специалитет</p>
+                        <p>✕</p>
+                    </div>
+                    <div class="selected_filter">
+                        <p>Онлайн-защита</p>
+                        <p>✕</p>
+                    </div>
+                    <p class="selected_filter_signature">Найдено 6 направлений</p>
+                </div>
+                <div class="directions_cards directions_card_magistracy">
+                    <div class="directions_card">
+                        <img src="img/direction_3.png" alt="direction_3">
+                        <div class="directions_card_content">
+                            <h4>Экономика</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                    <div class="directions_card">
+                        <img src="img/direction_2.png" alt="direction_2">
+                        <div class="directions_card_content">
+                            <h4>Юриспруденция</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="directions_cards directions_card_magistracy">
+                    <div class="directions_card">
+                        <img src="img/direction_4.png" alt="direction_4">
+                        <div class="directions_card_content">
+                            <h4>Журналистика</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                    <div class="directions_card">
+                        <img src="img/direction_5.png" alt="direction_5">
+                        <div class="directions_card_content">
+                            <h4>Медицинская оптика</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="directions_cards directions_card_bachelor">
+                    <div class="directions_card">
+                        <img src="img/direction_7.png" alt="direction_7">
+                        <div class="directions_card_content">
+                            <h4>Торговое дело</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                    <div class="directions_card">
+                        <img src="img/direction_8.png" alt="direction_8">
+                        <div class="directions_card_content">
+                            <h4>Пожарная безопасность</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="directions_cards directions_card_specialty">
+                    <div class="directions_card">
+                        <img src="img/direction_9.png" alt="direction_9">
+                        <div class="directions_card_content">
+                            <h4>Земельно-имущественные отношения</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button large">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                    <div class="directions_card">
+                        <img src="img/direction_10.png" alt="direction_10">
+                        <div class="directions_card_content">
+                            <h4>Гостиничное дело</h4>
+                            <ul class="directions_list">
+                                <li>от 12 500 ₽ семестр</li>
+                                <li>от 2,5 лет</li>
+                            </ul>
+                            <button class="directions_card_button">...КОСУЛЬТАЦИЯ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback_show">
+            <div class="feedback_text">
+                <h3>Ещё вопросы?</h3>
+                <p>Задайте их и наш менеджер свяжется с Вами в течение 15 минут</p>
+                <div class="feedback_text_manager">
+                    <img src="img/avatar_small.png" alt="avatar_small" />
+                    <p>Вам ответит Анастасия — Ваш персональный менеджер</p>
+                </div>
+            </div>
+            <div class="feedback_data">
+                <p>Как Вас зовут?</p>
+                <input type="text" placeholder="Иванов Иван" />
+                <p>Ваш телефон</p>
+                <input type="text" placeholder="+7 (000) 000 00 00" />
+                <p class="feedback_data_agreement">
+                    Нажимая кнопку “Задать вопрос”, Вы соглашаетесь с <ins>условиями обработки персональных данных</ins>
+                </p>
+            </div>
+            <div class="feedback_message">
+                <p>Напишите свои вопросы:</p>
+                <input type="text" placeholder="Вы можете задать несколько вопросов" />
+                <button class="feedback_message_button">Задать вопрос</button>
+                <button class="button-close" type="button">
+                    <img src="img/close-button.svg" alt="Закрыть">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <img src="img/logo2.svg" alt="logo" />
+            <p>Политика конфиденциальности</p>
+        </div>
+        <div class="footer_social_network">
+            <img src="img/vk.svg" alt="vk" />
+            <img src="img/instagram.svg" alt="instagram" />
+            <img src="img/whatsapp.svg" alt="whatsapp" />
+        </div>
+        <div class="footer_info">
+            <p class="footer_number">+7 (902) 311 36 64</p>
+            <p>Рабочее время: <br> Пн — Пт с 9.00 до 19.00</p>
+        </div>
+    </footer>
+    <script src="js/modal_window.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+
+</html>
